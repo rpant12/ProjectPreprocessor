@@ -3,9 +3,9 @@ import pandas as pd
 import plotly.graph_objects as go
 from PIL import Image
 
-st.set_page_config(page_title = "Agile Assessment", layout="wide")
+st.set_page_config(page_title = "Product Level Agile Assessment", layout="wide")
 
-st.title('Agile Assessment Project Level Data Preprocessor')
+st.title('Agile Assessment Product Level Data Preprocessor')
 
 
 def convert_df(df):
