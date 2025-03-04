@@ -5,7 +5,7 @@ from PIL import Image
 
 st.set_page_config(page_title = "Agile Assessment", layout="wide")
 
-st.title('Agile Assessment Data Preprocessor')
+st.title('Agile Assessment Project Level Data Preprocessor')
 
 
 def convert_df(df):
