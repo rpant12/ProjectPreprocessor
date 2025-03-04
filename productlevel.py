@@ -7,10 +7,6 @@ st.set_page_config(page_title = "Product Level Agile Assessment", layout="wide")
 
 st.title('Agile Assessment Product Level Data Preprocessor')
 
-
-def convert_df(df):
-   return df.to_csv(index=False).encode('utf-8')
-
 def replacer(item):
     if "A)" in item:
         return 0
@@ -38,15 +34,20 @@ if uploaded_file is not None:
         "Completion time", 
         "Email", 
         "Name", 
-        'Which best describes the function of your team?\xa0\xa0', 
-        'What is your role level at Pacific Life?\xa0\xa0', 
-        'How long have you been a member of your current team?\xa0\xa0', 
-        'Have you completed formal agile training?', 
-        'If yes, describe the type of training.\xa0', 
-        'How long has your team been operating using agile practices?\xa0'
+       'Which best describes the function of your team?',
+       'What is your role level at Pacific Life? ',
+       'How long have you been a member of your current team? ',
+       # 'Have you completed formal agile training? (e.g., SAFe, Scrum training, etc.)',
+       'If yes, please describe the type of training',
+       'How long has your team been operating using agile practices?'
         ], axis = 1)
 
+
     applied_func = applied.map(replacer)
+    applied_func.columns
+
+    applied_func = applied_func.drop(applied_func.columns[-1], axis = 1)
+    applied_func
 
     dct = dict()
     col_names = [
