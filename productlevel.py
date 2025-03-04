@@ -44,10 +44,8 @@ if uploaded_file is not None:
 
 
     applied_func = applied.map(replacer)
-    applied_func.columns
 
     applied_func = applied_func.drop(applied_func.columns[-1], axis = 1)
-    applied_func
 
     dct = dict()
     col_names = [
