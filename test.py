@@ -119,13 +119,13 @@ if uploaded_file is not None:
     col2.subheader("Legend:")
 
     col2.html(
-    '<h5><span style="display: inline-block; width: 20px; height: 20px; background-color: #b5b3da;"></span> &nbsp; SHU - BEGINNER </br> \
+    '<h4><span style="display: inline-block; width: 20px; height: 20px; background-color: #b5b3da;"></span> &nbsp; SHU - BEGINNER </br> \
     <span style="display: inline-block; width: 20px; height: 20px; background-color: #8587be;"></span> &nbsp; HA - PRACTICING </br> \
-    <span style="display: inline-block; width: 20px; height: 20px; background-color: #241e5f;"></span> &nbsp; RI - MASTER </h5> \
-    <h5> This chart visualizes employee experience across 11 dimensions of Health & Engagement. </h5> \
-    <h5> The SHU Level indicates the beginning of agility and a product mindset, but not enough to create a tangible impact. </h5> \
-    <h5> The HA Level is the "practicing" level indicating a functioning state for that dimension. This is the goal we are trying to achieve. </h5> \
-    <h5> The RI Level suggests mastery of that dimension, it is the future vision we should strive for. </h5>'
+    <span style="display: inline-block; width: 20px; height: 20px; background-color: #241e5f;"></span> &nbsp; RI - MASTER </h4> \
+    <h4> This chart visualizes employee experience across 11 dimensions of Health & Engagement. </h4> \
+    <h4> The SHU Level indicates the beginning of agility and a product mindset, but not enough to create a tangible impact. </h4> \
+    <h4> The HA Level is the "practicing" level indicating a functioning state for that dimension. This is the goal we are trying to achieve. </h4> \
+    <h4> The RI Level suggests mastery of that dimension, it is the future vision we should strive for. </h3>'
 )
 
     col2.html(
